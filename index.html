@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//fonts.googleapis.com" rel="dns-prefetch">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <title>Mu_Cloud's Profile</title>
+    <style>
+        body, html{
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            font-family: Poppins, 'Microsoft YaHei UI Light', serif;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header, .content{
+            margin: 20px;
+            max-width: 1300px;
+        }
+        .header{
+            width: 100%;
+            margin: 50px 0 100px 0;
+        }
+        .header-avatar{
+            display: flex;
+            justify-content: center;
+            margin: 0 0 100px 0;
+        }
+        .title{
+            width: 100%;
+            margin: 0;padding: 0;
+            font-size: 60px
+        }
+        .sub-title{
+            width: 100%;
+            margin: 0;padding: 0;
+            font-size: 30px;
+        }
+        .avatar{
+            width: 100px;
+            height: 100px;
+            margin: 0 20px 0 0;
+            border-radius: 100px;
+        }
+        .hdb{
+            display: flex;
+            position: sticky;
+            backdrop-filter: blur(8px);
+            padding: 0 30px;
+            align-items: center;
+            height: 70px;
+            top: 0;
+        }
+        .hdb-content{
+            display: inline-block;
+        }
+        .hdb> ul> li, .mul-inner-div> ul> li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+        }
+        a, a:hover, a:active{
+            text-decoration: none;
+            color: white;
+        }
+        .ftb{
+            z-index: -1;
+            width: 100%;
+            height: 40px;
+        }
+        .text, .text:hover{
+            color: white;
+        }
+        .center-text{
+            text-align: center;
+        }
+        .mul-inner-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .mul{
+            display: flex;
+            flex-direction: column;
+            background-image: linear-gradient(45deg, rebeccapurple, purple, red);
+            width: 30%;
+            height: inherit;
+            border-radius: 20px;
+        }
+        .mul> *{
+            margin: 0;
+            padding: 0;
+        }
+        .mul-img{
+            display: flex;
+            width: 100%;
+            height: 200px;
+            margin: 0;
+            justify-content: center;
+        }
+        .mul> h3{
+            margin: 10px 0;
+        }
+        .mui{
+            display: flex;
+            flex-direction: column;
+            border: white solid 1px;
+            width: 24%;
+            height: inherit;
+            border-radius: 20px;
+            justify-content: space-between;
+        }
+        .mui-img{
+            display: flex;
+            width: 100%;
+            margin: 0;
+        }
+        .mui-img>img{
+            width: 100%;
+            border-radius: 20px;
+        }
+        .mui-inf{
+            bottom: 0;
+        }
+        .btn{
+            display: flex;
+            border: white solid 2px;
+            border-radius: 50px;
+            background-color: white;
+            margin: 60px 0;
+            width: 200px;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 24px;
+        }
+        .btn:hover{
+            background-color: black;
+            border: white solid 2px;
+        }
+        .item-inn{
+            display: flex;
+            align-items: center;
+            margin: 10px;
+        }
+        .item-inn> img{
+            margin: 5px;
+            width: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hdb">
+        <b class="hdb-title"><a class="text">MuCloud_Official</a></b>
+        <ul class="hdb-content">
+            <li class="hdb-items"><a class="text" href="#top">Home</a></li>
+            <li class="hdb-items"><a class="text" href="#info">Info</a></li>
+        </ul>
+    </div>
+
+    <div class="page">
+        <div class="main">
+            <div class="header">
+                <div class="header-avatar">
+                    <img class="avatar" src="./avatar.jpg" alt="avatar"/>
+                    <p class="title text">MuCloud_Official</p>
+                </div>
+                <b class="text title">Make it happen.</b><br/>
+                <b class="text title">With Code.</b><br/>
+                <p class="text sub-title">MADE IN STARRY SKY. MADE IN SAKURA OCEAN. MADE IN VOID LAND.</p>
+                <a class="btn" href="https://mucloudofficial.github.io/MuBlog">View Blog</a>
+
+            </div>
+
+            <div class="content">
+                <div class="content-item">
+
+                    <h1 id="info" class="text">| Info</h1>
+                    <hr/>
+                    <h2 class="text">Developer</h2><br/>
+                    <h2 class="text center-text">Most Used Languages</h2>
+
+                    <div class="mul-inner-div">
+                        <div class="mul">
+                            <div class="mul-img"><img src="./kotlin.svg" alt="kt" width="300px"></div>
+                            <h3 class="text center-text">Kotlin</h3>
+                            <p class="text center-text">Designed by Jetbrains</p>
+                        </div>
+
+                        <div class="mul">
+                            <div class="mul-img"><img src="./java.png" alt="java"></div>
+                            <h3 class="text center-text">Java</h3>
+                            <p class="text center-text">Designed by SUN (Oracle)</p>
+                        </div>
+
+                        <div class="mul">
+                            <div class="mul-img"><img id="cs" src="./csharp.svg" alt="csharp"></div>
+                            <h3 class="text center-text">C#</h3>
+                            <p class="text center-text">Designed by Microsoft</p>
+                        </div>
+                    </div>
+
+                    <br/>
+                    <h2 class="text center-text">Most Used IDEs</h2>
+
+                    <div class="mul-inner-div">
+                        <div class="mui">
+                            <div class="mui-img"><img src="./idea.png" alt="idea"></div>
+                            <div class="mui-inf">
+                                <h3 class="text center-text">IntelliJ IDEA</h3>
+                                <p class="text center-text">Designed by Jetbrains</p>
+                            </div>
+                        </div>
+
+                        <div class="mui">
+                            <div class="mui-img"><img src="./vs.png" alt="vs"></div>
+                            <div class="mui-inf">
+                                <h3 class="text center-text">Visual Studio</h3>
+                                <p class="text center-text">Designed by Microsoft</p>
+                            </div>
+                        </div>
+
+                        <div class="mui">
+                            <div class="mui-img"><img src="./webstorm.png" alt="webstorm"></div>
+                            <div class="mui-inf">
+                                <h3 class="text center-text">WebStorm</h3>
+                                <p class="text center-text">Designed by Jetbrains</p>
+                            </div>
+                        </div>
+
+                        <div class="mui">
+                            <div class="mui-img"><img src="./writerside.png" alt="writerside"></div>
+                            <div class="mui-inf">
+                                <h3 class="text center-text">WriterSide</h3>
+                                <p class="text center-text">Designed by Jetbrains</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text">MaiMai DX Gamer</h2>
+                    </div>
+
+                </div>
+                <div class="content-item">
+                    <h1 class="text">| Contact Me</h1>
+                    <hr/>
+                    <div class="item-inn">
+                        <img src="./mail.svg" alt="Email: "/>
+                        <a class="text" href="mailto:Mu_Cloud@outlook.de"> Mu_Cloud@outlook.de</a>
+                    </div>
+                    <div class="item-inn">
+                        <img src="./bilibili.svg" alt="BiliBili: "/>
+                        <a class="text" href="https://space.bilibili.com/356101590"> MuCloud_Official</a>
+                    </div>
+                    <div class="item-inn">
+                        <img src="./github.svg" alt="Github: "/>
+                        <a class="text" href="https://github.com/MuCloudOfficial"> MuCloud_Official</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ftb">
+        <p class="text center-text">Copyright &copy; 2019-2022, Twilight Cloud Pavilion, ALL Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
