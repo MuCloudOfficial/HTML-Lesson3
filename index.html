@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//fonts.googleapis.com" rel="dns-prefetch">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <script src="index.js"></script>
     <title>Mu_Cloud's Profile</title>
     <style>
         body, html{
@@ -17,14 +18,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin: 20px;
         }
         .header, .content{
-            margin: 20px;
             max-width: 1300px;
         }
         .header{
             width: 100%;
-            margin: 50px 0 100px 0;
+            margin: 50px 0 100px 0px;
         }
         .header-avatar{
             display: flex;
@@ -153,6 +154,20 @@
             margin: 5px;
             width: 25px;
         }
+        #title-inner-text{
+            color: dodgerblue;
+        }
+        @keyframes MPT2AR {
+            0%{
+                transform: translateX(-30px);
+                opacity: 0;
+            }
+            10%{
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -174,7 +189,7 @@
                 </div>
                 <b class="text title">Make it happen.</b><br/>
                 <b class="text title">With Code.</b><br/>
-                <p class="text sub-title">MADE IN STARRY SKY. MADE IN SAKURA OCEAN. MADE IN VOID LAND.</p>
+                <p class="text sub-title">MADE IN <span class="text sub-title" id="title-inner-text">STARRY SKY</span>.</p>
                 <a class="btn" href="https://mucloudofficial.github.io/MuBlog">View Blog</a>
 
             </div>
@@ -189,7 +204,7 @@
 
                     <div class="mul-inner-div">
                         <div class="mul">
-                            <div class="mul-img"><img src="./kotlin.svg" alt="kt" width="300px"></div>
+                            <div class="mul-img"><img src="./kotlin.svg" alt="kt" width="200px"></div>
                             <h3 class="text center-text">Kotlin</h3>
                             <p class="text center-text">Designed by Jetbrains</p>
                         </div>
@@ -270,7 +285,7 @@
     </div>
 
     <div class="ftb">
-        <p class="text center-text">Copyright &copy; 2019-2022, Twilight Cloud Pavilion, ALL Rights Reserved.</p>
+        <p class="text center-text">Copyright &copy; 2019-2024, Twilight Cloud Pavilion, ALL Rights Reserved.</p>
     </div>
 
 </body>
