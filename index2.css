@@ -1,0 +1,106 @@
+body, html{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-width: 1300px;
+    font-family: Poppins, 'Microsoft YaHei UI Light', serif;
+}
+.nav{
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+}
+.hdb{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    min-width: 1300px;
+    max-width: 1300px;
+    height: 70px;
+}
+.hdb> ul> li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.ftb{
+    width: 100%;
+    height: 40px;
+}
+.text, .text:hover{
+    color: white;
+}
+.center-text{
+    text-align: center;
+}
+a, a:hover, a:active{
+    text-decoration: none;
+    color: white;
+}
+.page{
+    height: 100%;
+    width: 100%;
+}
+.header{
+    background-image: radial-gradient(farthest-corner at 90% 10%, gray, black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.header-avatar{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    margin: 0 20px 0 0;
+    border-radius: 100px;
+}
+.header-page{
+    max-width: 1300px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 10px 0 20px;
+}
+.title{
+    width: 100%;
+    margin: 0;padding: 0;
+    font-size: 60px
+}
+.sub-title{
+    width: 100%;
+    margin: 0;padding: 0;
+    font-size: 30px;
+}
+.btn{
+    display: flex;
+    border: white solid 2px;
+    border-radius: 50px;
+    background-color: white;
+    margin: 60px 0;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 24px;
+}
+.btn:hover{
+    background-color: transparent;
+    border: white solid 2px;
+}
+.po-frame{
+
+}
