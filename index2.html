@@ -7,40 +7,91 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <title>Mu_Cloud's Project Overview</title>
     <link rel="stylesheet" href="./index2.css">
+    <script src="index2.js"></script>
 </head>
 <body>
-
-    <div class="nav">
-        <div class="hdb">
-            <b class="hdb-title"><a class="text">MuCloud_Official</a></b>
-            <ul class="hdb-content">
-                <li class="hdb-items"><a class="text" href="./index.html">Home</a></li>
-                <li class="hdb-items"><a class="text" href="#">Project Overview</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="page">
-        <div class="header">
-            <div class="header-avatar header-page">
-                <img class="avatar" src="res/avatar.jpg" alt="avatar"/>
-                <p class="title text">MuCloud_Official</p>
-            </div>
-            <div class="header-text header-page">
-                <b class="text title">Project Overview</b><br/>
-                <p class="text sub-title">Designed by <span style="background-image: linear-gradient(90deg, gray, white); background-clip: text; color: transparent">Mu_Cloud & Twilight Cloud Pavilion Advanced Tech Department.</span></p>
-                <a class="btn" href="https://github.com/MuCloudOfficial">Github</a>
+    <div>
+        <div class="nav">
+            <div class="hdb">
+                <b class="hdb-title"><a class="text">MuCloud_Official</a></b>
+                <ul class="hdb-content">
+                    <li class="hdb-items"><a class="text" href="./index.html">Home</a></li>
+                    <li class="hdb-items"><a class="text" href="#">Project Overview</a></li>
+                </ul>
             </div>
         </div>
-        <div class="po-frame">
-            <div></div>
+
+        <div class="page">
+            <div class="header">
+                <div class="header-avatar header-page">
+                    <img class="avatar" src="res/avatar.jpg" alt="avatar"/>
+                    <p class="title text">MuCloud_Official</p>
+                </div>
+                <div class="header-text header-page">
+                    <b class="text title">Project Overview & Feedback</b><br/>
+                    <p class="text sub-title">Designed by <span style="background-image: linear-gradient(90deg, gray, white); background-clip: text; color: transparent">Mu_Cloud & Twilight Cloud Pavilion Adv.Tech Department.</span></p>
+                    <div class="btn-line">
+                        <a class="btn" href="https://github.com/MuCloudOfficial">Github</a>
+                        <a class="btn" href="https://mucloudofficial.github.io/MuCloudProjectDoc">Project DOC</a>
+                    </div>
+                </div>
+            </div>
+            <div class="po-area">
+                <b class="text center-text sub-title" style="height: 16px; margin: 30px 0;">Star Project</b>
+                <div class="po-list">
+                    <div class="po-item">
+                        <div class="po-item-title">
+                            <img src="res/repo_icon.svg" width="20"/>
+                            <p class="text">MK-JoinMessage</p>
+                        </div>
+                        <div class="po-item-desc">
+                            <p class="text">MC服务器插件，用于自定义用户进出服务器的提示消息</p>
+                            <p class="text"> &lt;/> Kotlin & Java</p>
+                            <a class="btn" href="https://github.com/MuCloudOfficial/MK-JoinMessage">SourceCode</a>
+                        </div>
+                    </div>
+                    <div class="po-item">
+                        <div class="po-item-title">
+                            <img src="res/repo_icon.svg" width="20"/>
+                            <p class="text">RS-MuMuBOT</p>
+                        </div>
+                        <div class="po-item-desc">
+                            <p class="text">基于 Mirai Console 的 QQ 机器人插件</p>
+                            <p class="text"> &lt;/> Kotlin</p>
+                            <a class="btn" href="https://github.com/MuCloudOfficial/XY-MuMuBot">SourceCode</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fb-area">
+                <b class="text center-text sub-title" style="height: 16px; margin: 30px 0;">Feedback</b>
+                <form name="fb" action="/" method="post">
+                    <input class="text" type="text" id="name" name="name" placeholder="name"/>
+                    <p class="fb-status">Required!</p><br/>
+
+                    <input class="text" type="email" id="email" name="email" placeholder="Email"/>
+                    <p class="fb-status">Required!</p><br/>
+
+                    <label class="text" for="po">Select Project</label>
+                    <select name="po" id="po" class="text">
+                        <option value="mkjm">MK-JoinMessage</option>
+                        <option value="mkar">MK-AutoReplant</option>
+                    </select><br/>
+
+                    <input class="text" type="text" id="problem" name="problem" placeholder="Problem"/>
+                    <p class="fb-status">Required!</p><br/>
+                    <input class="text" type="text" id="desc" name="desc" placeholder="Description"/><br/>
+
+                    <input type="checkbox" id="fb-cb1" name="fb-cb1"/><label class="text">Receive Feedback Reply by Email</label><br/>
+
+                    <p class="btn" id="fb-submit" onclick="validateFeedback()">Submit</p>
+                </form>
+            </div>
         </div>
     </div>
 
     <div class="ftb">
         <p class="text center-text">Copyright &copy; 2019-2024, Twilight Cloud Pavilion, ALL Rights Reserved.</p>
     </div>
-
-    <script src="./index2.js"></script>
 </body>
 </html>

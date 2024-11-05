@@ -84,14 +84,18 @@ a, a:hover, a:active{
     margin: 0;padding: 0;
     font-size: 30px;
 }
+.btn-line{
+    display: flex;
+    flex-direction: row;
+}
 .btn{
     display: flex;
     border: white solid 2px;
     border-radius: 50px;
     background-color: white;
-    margin: 60px 0;
+    margin: 60px 20px;
     width: 200px;
-    height: 50px;
+    height: 45px;
     justify-content: center;
     align-items: center;
     color: black;
@@ -101,6 +105,95 @@ a, a:hover, a:active{
     background-color: transparent;
     border: white solid 2px;
 }
-.po-frame{
-
+.po-area, .fb-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(0deg, blueviolet, black, black);
 }
+.fb-area{
+    background-image: linear-gradient(0deg, dodgerblue, black, black);
+}
+.po-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1300px;
+    height: inherit;
+}
+.po-item{
+    margin: 20px;
+    border: transparent solid 3px;
+    background: linear-gradient(0deg, #111111, #111111) content-box, radial-gradient(farthest-corner at 90% 10%, gray, black) border-box;
+    border-radius: 20px;
+    width: 500px;
+    height: 250px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+}
+.po-item-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    height: 50px;
+}
+.po-item-title p{
+    font-size: 22px;
+}
+.po-item-title img{
+    margin: 0 20px;
+}
+.po-item-desc{
+    margin: 0 40px;
+}
+.po-item-desc .btn{
+    margin: 30px 0;
+    height: 35px;
+}
+.fb-area form{
+    width: 600px;
+    margin: 30px 0;
+}
+.fb-area form input{
+    background-color: black;
+    border: gray solid 2px;
+    padding: 0 5px;
+    width: 600px;
+    height: 40px;
+    margin: 0;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+.fb-area form select{
+    background-color: black;
+    border: gray solid 2px;
+    width: 600px;
+    height: 45px;
+    font-size: 16px;
+    margin: 0 0 45px 0;
+    outline: none;
+}
+.fb-area #fb-cb1{
+    width: 16px;
+    height: 16px;
+    margin: 20px 5px 0 0;
+}
+#fb-submit{
+    width: 600px;
+    margin: 60px 0;
+}
+#fb-submit:hover{
+    color: white;
+}
+.fb-status{
+    transform: translateX(30px);
+    opacity: 0;
+    margin: 0;
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+}
+
